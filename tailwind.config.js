@@ -34,7 +34,7 @@ module.exports = {
         './src/product-virtual.html',
         './src/product-physical.html',
         './src/product-local.html',
-        
+        './src/comming_soon.html',
 
     ],
     theme: {
