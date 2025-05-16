@@ -187,3 +187,21 @@ select#bank option {
         grid-template-columns: 1fr; /* Stack on smaller screens */
     }
 }
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent }
+    100% { border-color: #06b6d4 }
+  }
+
+  .typing-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+  }
