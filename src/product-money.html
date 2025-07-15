@@ -431,7 +431,7 @@
                             </svg>
                         </button>
                         <!-- 2nd level menu -->
-                        <ul class="origin-top-right absolute top-full left-1/2 -translate-x-1/2 w-[800px]  backdrop-blur-xl p-8 grid grid-cols-3 gap-8  duration-300 transform bg-[#fff] dark:bg-[#19202dc9]   rounded-lg shadow-xl [&[x-cloak]]:hidden"
+                        <ul class="origin-top-right absolute top-full left-1/2 -translate-x-1/2 w-[800px]  backdrop-blur-xl p-8 grid grid-cols-2 gap-8  duration-300 transform bg-[#fff] dark:bg-[#19202dc9]   rounded-lg shadow-xl [&[x-cloak]]:hidden"
                             x-show="open" x-transition:enter="transition ease-out duration-200 transform"
                             x-transition:enter-start="opacity-0 -translate-y-2"
                             x-transition:enter-end="opacity-100 translate-y-0"
@@ -461,63 +461,188 @@
                                             it
                                         </p>
                                     </div>
-                                    <div class="space-y-2">
-                                        <a href="help-chat.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                    <div class="flex gap-6">
+                                        <div class="space-y-2">
+                                            <a href="help-chat.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-message-circle w-4 h-4 text-[#00B6DE]">
+                                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Live
+                                                            Chat</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">24/7
+                                                        instant support</p>
+                                                </div>
+                                            </a>
+                                            <a href="help-phone.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-phone w-4 h-4 text-[#00B6DE] ">
+                                                        <path
+                                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Phone
+                                                            Support</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk
+                                                        to
+                                                        our experts</p>
+                                                </div>
+                                            </a>
+                                            <a href="help-phone.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                                    <path
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                                    </path>
+                                                </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                            WhatsApp Support
+                                                        </span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk
+                                                        to
+                                                        our experts</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="space-y-2">
+                                        <a href="#"
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-message-circle w-4 h-4 text-[#00B6DE]">
-                                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                                    class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
+                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                                 </svg>
+                                                
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Live
-                                                        Chat</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
+                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
                                                         <path d="m9 18 6-6-6-6"></path>
                                                     </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">24/7
-                                                    instant support</p>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get
+                                                    detailed assistance
+                                                </p>
+                                                
                                             </div>
                                         </a>
-                                        <a href="help-phone.html"
+                                        <a href="help-community.html"
                                             class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-phone w-4 h-4 text-[#00B6DE] ">
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
                                                     <path
-                                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                                    </path>
+                                                </svg>
+                                                
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="flex items-center justify-between"><span
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
+                                                        Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        <path d="m9 18 6-6-6-6"></path>
+                                                    </svg></div>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                                    Connect with users</p>
+                                                
+                                            </div>
+                                        </a>
+                                                                                <a href="help-community.html"
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                            <div
+                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                                    <path
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
                                                     </path>
                                                 </svg>
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Phone
-                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Social media
+                                                        </span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
                                                         <path d="m9 18 6-6-6-6"></path>
                                                     </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to
-                                                    our experts</p>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                                    Connect with users</p>
+                                                
                                             </div>
                                         </a>
                                     </div>
+                                    </div>
                                 </div>
                             </li>
-
                             <li>
                                 <div class="space-y-6">
                                     <div class="space-y-2">
@@ -527,22 +652,20 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-book-open-check w-5 h-5 text-[#fff]">
-                                                    <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z"></path>
-                                                    <path d="m16 12 2 2 4-4"></path>
-                                                    <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3">
-                                                    </path>
+                                                    class="lucide lucide-mail w-5 h-5 text-white">
+                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                                 </svg>
                                             </div>
-                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white">Self Service
+                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white"> Self Service
                                             </h3>
                                         </div>
-                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Find quick answers
+                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Reach out directly
                                         </p>
                                     </div>
                                     <div class="space-y-2">
                                         <a href="help-center.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -570,7 +693,7 @@
                                             </div>
                                         </a>
                                         <a href="help-video.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -598,89 +721,9 @@
                                     </div>
                                 </div>
                             </li>
-
-                            <li>
-                                <div class="space-y-6">
-                                    <div class="space-y-2">
-                                        <div class="flex items-center gap-3">
-                                            <div
-                                                class="p-2.5 rounded-xl bg-gradient-to-r from-[#00B6DE] to-[#0066CC] shadow-lg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-mail w-5 h-5 text-white">
-                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                                </svg>
-                                            </div>
-                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white">Contact Us
-                                            </h3>
-                                        </div>
-                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Reach out directly
-                                        </p>
-                                    </div>
-                                    <div class="space-y-2">
-                                        <a href="#"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
-                                            <div
-                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
-                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
-                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                                        <path d="m9 18 6-6-6-6"></path>
-                                                    </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get
-                                                    detailed assistance
-                                                </p>
-                                            </div>
-                                        </a>
-                                        <a href="help-community.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
-                                            <div
-                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
-                                                    <path
-                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
-                                                    </path>
-                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
-                                                        Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                                        <path d="m9 18 6-6-6-6"></path>
-                                                    </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
-                                                    Connect with users</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </li>
+
                     <li class="p-4 relative flex items-center space-x-1" x-data="{ open: false }"
                         @mouseenter="open = true" @mouseleave="open = false">
                         <a class="group text-[#1E0B4B] dark:text-white text-[15px] font-medium hover:text-[#00B6DE]  duration-300"
@@ -743,8 +786,8 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who
-                                                        We Are
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Who are we
                                                     </span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -772,8 +815,9 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our
-                                                        Operating Principles</span><svg
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Our operating principles
+                                                    </span><svg
                                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -837,7 +881,7 @@
                                                 </p>
                                             </div>
                                         </a>
-                                        <a href="partnership.html"
+                                        <a href="comming_soon.html"
                                             class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
@@ -857,8 +901,10 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Partnership
-                                                        Programs</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Partnership programs
+
+                                                    </span><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
@@ -1809,7 +1855,7 @@
                             </path>
                         </svg>
                     </button>
-                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <!-- <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
                     <button onclick="toggleSlideMenu('self-service')"
                         class="w-full flex items-center justify-between px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
                         <span>Self Service
@@ -1818,11 +1864,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
                         </svg>
-                    </button>
+                    </button> -->
                     <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <button onclick="toggleSlideMenu('contact-us')"
+                    <button onclick="toggleSlideMenu('self-service')"
                         class="w-full flex items-center justify-between px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
-                        <span>Contact Us
+                        <span>Self Service
                         </span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -1892,6 +1938,112 @@
                             <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to our experts</p>
                         </div>
                     </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="help-phone.html"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                    WhatsApp Support
+                                </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to our experts</p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="#"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
+                                    Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get detailed assistance
+                            </p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="help-community.html"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
+                                    Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                Connect with users</p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="#"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Social media
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                Connect with users</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -1958,73 +2110,6 @@
                                 </svg></div>
                             <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
                                 Step-by-step guides</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- contact Menu (Slide-In) -->
-            <div id="contact-us" class="hidden slide-in  flex-col space-y-4 py-6 px-4">
-                <!-- Main Menu Button -->
-                <button onclick="goToMainMenu()"
-                    class="flex items-center px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                    <span>Main Menu</span>
-                </button>
-
-                <div class="space-y-4">
-                    <a href="#"
-                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
-                        <div
-                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
-                                    Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                    <path d="m9 18 6-6-6-6"></path>
-                                </svg></div>
-                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get detailed assistance
-                            </p>
-                        </div>
-                    </a>
-                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <a href="help-community.html"
-                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
-                        <div
-                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
-                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
-                                </path>
-                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
-                                    Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                    <path d="m9 18 6-6-6-6"></path>
-                                </svg></div>
-                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
-                                Connect with users</p>
                         </div>
                     </a>
                 </div>
@@ -2104,8 +2189,8 @@
                         </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who
-                                    We Are
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who are we
+                                   
                                 </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
@@ -2131,8 +2216,7 @@
                         </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our
-                                    Operating Principles</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our operating principles</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
@@ -2185,7 +2269,7 @@
                         </div>
                     </a>
                     <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <a href="partnership.html"
+                    <a href="comming_soon.html"
                         class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                         <div
                             class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
@@ -3110,7 +3194,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Send Money</span></a><a href="#"
+                                    </svg><span>Send Money</span></a><a href="track-your-transfer.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3118,7 +3202,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Track Transfer</span></a><a href="#"
+                                    </svg><span>Track Transfer</span></a><a href="help-center.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3126,7 +3210,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Help Center</span></a><a href="#"
+                                    </svg><span>Help Center</span></a><a href="about-us.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3134,7 +3218,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>About Us</span></a><a href="#"
+                                    </svg><span>About Us</span></a><a href="career.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3142,7 +3226,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Careers</span></a><a href="#"
+                                    </svg><span>Careers</span></a><a href="blog.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3158,7 +3242,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Press</span></a><a href="#"
+                                    </svg><span>Press</span></a><a href="help-community.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

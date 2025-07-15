@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="bg-white dark:bg-[#080F1C] shadow-sm fixed w-full top-0 z-50">
+       <header class="bg-white dark:bg-[#080F1C] shadow-sm fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
             <!-- Logo Section -->
             <div class=" flex items-center  space-x-4">
@@ -431,7 +431,7 @@
                             </svg>
                         </button>
                         <!-- 2nd level menu -->
-                        <ul class="origin-top-right absolute top-full left-1/2 -translate-x-1/2 w-[800px]  backdrop-blur-xl p-8 grid grid-cols-3 gap-8  duration-300 transform bg-[#fff] dark:bg-[#19202dc9]   rounded-lg shadow-xl [&[x-cloak]]:hidden"
+                        <ul class="origin-top-right absolute top-full left-1/2 -translate-x-1/2 w-[800px]  backdrop-blur-xl p-8 grid grid-cols-2 gap-8  duration-300 transform bg-[#fff] dark:bg-[#19202dc9]   rounded-lg shadow-xl [&[x-cloak]]:hidden"
                             x-show="open" x-transition:enter="transition ease-out duration-200 transform"
                             x-transition:enter-start="opacity-0 -translate-y-2"
                             x-transition:enter-end="opacity-100 translate-y-0"
@@ -461,63 +461,188 @@
                                             it
                                         </p>
                                     </div>
-                                    <div class="space-y-2">
-                                        <a href="help-chat.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                    <div class="flex gap-6">
+                                        <div class="space-y-2">
+                                            <a href="help-chat.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-message-circle w-4 h-4 text-[#00B6DE]">
+                                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Live
+                                                            Chat</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">24/7
+                                                        instant support</p>
+                                                </div>
+                                            </a>
+                                            <a href="help-phone.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-phone w-4 h-4 text-[#00B6DE] ">
+                                                        <path
+                                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Phone
+                                                            Support</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk
+                                                        to
+                                                        our experts</p>
+                                                </div>
+                                            </a>
+                                            <a href="help-phone.html"
+                                                class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                                <div
+                                                    class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                                    <path
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                                    </path>
+                                                </svg>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <div class="flex items-center justify-between"><span
+                                                            class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                            WhatsApp Support
+                                                        </span><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                            <path d="m9 18 6-6-6-6"></path>
+                                                        </svg></div>
+                                                    <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk
+                                                        to
+                                                        our experts</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="space-y-2">
+                                        <a href="#"
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-message-circle w-4 h-4 text-[#00B6DE]">
-                                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                                    class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
+                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                                 </svg>
+                                                
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Live
-                                                        Chat</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
+                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
                                                         <path d="m9 18 6-6-6-6"></path>
                                                     </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">24/7
-                                                    instant support</p>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get
+                                                    detailed assistance
+                                                </p>
+                                                
                                             </div>
                                         </a>
-                                        <a href="help-phone.html"
+                                        <a href="help-community.html"
                                             class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-phone w-4 h-4 text-[#00B6DE] ">
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
                                                     <path
-                                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                                    </path>
+                                                </svg>
+                                                
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="flex items-center justify-between"><span
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
+                                                        Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        <path d="m9 18 6-6-6-6"></path>
+                                                    </svg></div>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                                    Connect with users</p>
+                                                
+                                            </div>
+                                        </a>
+                                                                                <a href="help-community.html"
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                            <div
+                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                                    <path
+                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                                    </path>
+                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
                                                     </path>
                                                 </svg>
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Phone
-                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Social media
+                                                        </span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
                                                         <path d="m9 18 6-6-6-6"></path>
                                                     </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to
-                                                    our experts</p>
+                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                                    Connect with users</p>
+                                                
                                             </div>
                                         </a>
                                     </div>
+                                    </div>
                                 </div>
                             </li>
-
                             <li>
                                 <div class="space-y-6">
                                     <div class="space-y-2">
@@ -527,22 +652,20 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-book-open-check w-5 h-5 text-[#fff]">
-                                                    <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z"></path>
-                                                    <path d="m16 12 2 2 4-4"></path>
-                                                    <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3">
-                                                    </path>
+                                                    class="lucide lucide-mail w-5 h-5 text-white">
+                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                                 </svg>
                                             </div>
-                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white">Self Service
+                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white"> Self Service
                                             </h3>
                                         </div>
-                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Find quick answers
+                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Reach out directly
                                         </p>
                                     </div>
                                     <div class="space-y-2">
                                         <a href="help-center.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -570,7 +693,7 @@
                                             </div>
                                         </a>
                                         <a href="help-video.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -598,89 +721,9 @@
                                     </div>
                                 </div>
                             </li>
-
-                            <li>
-                                <div class="space-y-6">
-                                    <div class="space-y-2">
-                                        <div class="flex items-center gap-3">
-                                            <div
-                                                class="p-2.5 rounded-xl bg-gradient-to-r from-[#00B6DE] to-[#0066CC] shadow-lg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-mail w-5 h-5 text-white">
-                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                                </svg>
-                                            </div>
-                                            <h3 class="text-lg font-bold text-[#1E0B4B] dark:text-white">Contact Us
-                                            </h3>
-                                        </div>
-                                        <p class="text-sm text-[#1E0B4B]/60 dark:text-[#81848C]">Reach out directly
-                                        </p>
-                                    </div>
-                                    <div class="space-y-2">
-                                        <a href="#"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
-                                            <div
-                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
-                                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
-                                                        Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                                        <path d="m9 18 6-6-6-6"></path>
-                                                    </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get
-                                                    detailed assistance
-                                                </p>
-                                            </div>
-                                        </a>
-                                        <a href="help-community.html"
-                                            class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
-                                            <div
-                                                class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
-                                                    <path
-                                                        d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
-                                                    </path>
-                                                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
-                                                        Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                        height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                                        <path d="m9 18 6-6-6-6"></path>
-                                                    </svg></div>
-                                                <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
-                                                    Connect with users</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </li>
+
                     <li class="p-4 relative flex items-center space-x-1" x-data="{ open: false }"
                         @mouseenter="open = true" @mouseleave="open = false">
                         <a class="group text-[#1E0B4B] dark:text-white text-[15px] font-medium hover:text-[#00B6DE]  duration-300"
@@ -743,8 +786,8 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who
-                                                        We Are
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Who are we
                                                     </span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -772,8 +815,9 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our
-                                                        Operating Principles</span><svg
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Our operating principles
+                                                    </span><svg
                                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -837,7 +881,7 @@
                                                 </p>
                                             </div>
                                         </a>
-                                        <a href="partnership.html"
+                                        <a href="comming_soon.html"
                                             class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                                             <div
                                                 class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
@@ -857,8 +901,10 @@
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <div class="flex items-center justify-between"><span
-                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Partnership
-                                                        Programs</span><svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                                        Partnership programs
+
+                                                    </span><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round"
@@ -1809,7 +1855,7 @@
                             </path>
                         </svg>
                     </button>
-                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <!-- <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
                     <button onclick="toggleSlideMenu('self-service')"
                         class="w-full flex items-center justify-between px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
                         <span>Self Service
@@ -1818,11 +1864,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
                         </svg>
-                    </button>
+                    </button> -->
                     <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <button onclick="toggleSlideMenu('contact-us')"
+                    <button onclick="toggleSlideMenu('self-service')"
                         class="w-full flex items-center justify-between px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
-                        <span>Contact Us
+                        <span>Self Service
                         </span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -1892,6 +1938,112 @@
                             <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to our experts</p>
                         </div>
                     </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="help-phone.html"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">
+                                    WhatsApp Support
+                                </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Talk to our experts</p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="#"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
+                                    Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get detailed assistance
+                            </p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="help-community.html"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
+                                    Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                Connect with users</p>
+                        </div>
+                    </a>
+                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
+                    <a href="#"
+                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
+                                </path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between"><span
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Social media
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
+                                Connect with users</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -1958,73 +2110,6 @@
                                 </svg></div>
                             <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
                                 Step-by-step guides</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- contact Menu (Slide-In) -->
-            <div id="contact-us" class="hidden slide-in  flex-col space-y-4 py-6 px-4">
-                <!-- Main Menu Button -->
-                <button onclick="goToMainMenu()"
-                    class="flex items-center px-3 py-2 text-[#1E0B4B] dark:text-white duration-300">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                    <span>Main Menu</span>
-                </button>
-
-                <div class="space-y-4">
-                    <a href="#"
-                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
-                        <div
-                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[#00B6DE]">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Email
-                                    Support</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                    <path d="m9 18 6-6-6-6"></path>
-                                </svg></div>
-                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">Get detailed assistance
-                            </p>
-                        </div>
-                    </a>
-                    <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <a href="help-community.html"
-                        class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5 duration-300 transform hover:-translate-y-1">
-                        <div
-                            class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-messages-square w-4 h-4 text-[#00B6DE]">
-                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z">
-                                </path>
-                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Community
-                                    Forum</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE] group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
-                                    <path d="m9 18 6-6-6-6"></path>
-                                </svg></div>
-                            <p class="text-sm mt-0.5 text-[#1E0B4B]/60 dark:text-[#81848C]">
-                                Connect with users</p>
                         </div>
                     </a>
                 </div>
@@ -2104,8 +2189,8 @@
                         </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who
-                                    We Are
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Who are we
+                                   
                                 </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
@@ -2131,8 +2216,7 @@
                         </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center justify-between"><span
-                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our
-                                    Operating Principles</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    class="font-medium text-[#00B6DE] group-hover:text-[#00B6DE] transition-colors">Our operating principles</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-chevron-right w-4 h-4 text-[#00B6DE]  group-hover:text-[#00B6DE] group-hover:translate-x-1  duration-300">
@@ -2185,7 +2269,7 @@
                         </div>
                     </a>
                     <hr class="w-full border-t-2 border-black/30 dark:border-gray-300">
-                    <a href="partnership.html"
+                    <a href="comming_soon.html"
                         class="group flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B6DE]/5 dark:hover:bg-white/5  duration-300 transform hover:-translate-y-1">
                         <div
                             class="p-2 rounded-lg bg-[#00B6DE]/10 group-hover:scale-110 transition-transform duration-300">
@@ -2597,7 +2681,7 @@
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Getting Started</h3>
 
                         </div>
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white">
                             <li><a href="#"
                                     class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>How
                                         to create an account</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -2606,7 +2690,19 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+
+                                     <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Download the SocialRemit App - Available on Google Play or Apple App Store </li>
+                                        <li>   Sign Up / Register - Enter your phone number or email and verify using the code sent to you </li>
+                                        <li>   Enter Personal Information - Full name, address, country of residence </li>
+                                        <li>   Verify Your Identity - Upload a valid ID (passport, national ID, or driver’s license) </li>
+                                        <li>   Set Up Recipient Info - Add recipient details (name, bank/mobile money info) </li>
+                                        <li>   Add a Payment Method - Link your debit card or bank account </li>
+                                        <li>  Pay and Relax 🚀 </li>
+                                     </ul>
+
+                            </li>
                             <li><a href="#"
                                     class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Verifying
                                         your identity</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -2615,7 +2711,21 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Provide personal info:Full name, DOB, home address </li>
+                                        <li>   Upload a valid photo ID: clear, unexpired, and with your full name and photo </li>
+                                        <li>   Take a selfie/live photo for facial match </li>
+                                        <li>   Wait for approval :gusually a few minutes to a few hours </li>
+                                        <li>  Tips for Fast Verification: 
+                                            <ul class="ml-4">
+                                                <li>   - Use bright lighting </li>
+                                                <li>   -  Ensure the full ID is visible </li>
+                                                <li>   - Use your official/legal name </li>
+                                            </ul>
+                                        </li>
+                                     </ul>
+                            </li>
                             <li><a href="#"
                                     class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Adding
                                         payment methods</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -2624,7 +2734,19 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                     <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Open the app and go to “Send Money” </li>
+                                        <li>   Start a transfer and follow the prompts </li>
+                                        <li>  Choose from: 
+                                            <ul class="ml-4">
+                                                <li>   - Debit/Credit Card </li>
+                                                <li>   -  Open Banking </li>
+                                            </ul>
+                                        </li>
+                                        <li>   Or go to Settings > Add Payment Method </li>
+                                     </ul>
+                                </li>
                         </ul>
                     </div>
                     <div
@@ -2642,34 +2764,45 @@
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Sending Money</h3>
                         </div>
 
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white ">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white ">
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Transfer
-                                        limits</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>What are the transfer limits for SocialRemit?
+</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2   text-[#1E0B4B]/70 dark:text-white">
+                                        <li>  Transfer limits vary based on the destination country, selected payout method, and verification level. Generally, SocialRemit allows daily, per-transaction, and periodic limits that are competitive and fully disclosed within the app or website at the time of the transaction.</li>
+                                    </ul>
+                                </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Exchange
-                                        rates</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span> How are exchange rates determined?
+</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2   text-[#1E0B4B]/70 dark:text-white">
+                                        <li>  SocialRemit offers competitive, real-time exchange rates that are continuously reviewed to reflect market conditions. The applicable rate is always shown before you confirm your transaction, giving you full transparency. </li>
+                                    </ul>
+                                </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Transfer
-                                        fees</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Transfer Fees</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2   text-[#1E0B4B]/70 dark:text-white">
+                                        <li>  Most regions have zero fees; a few destinations may incur small charges with all costs shown upfront, no hidden charges. </li>
+                                    </ul>
+                            </li>
                         </ul>
                     </div>
                     <div
@@ -2688,7 +2821,7 @@
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Security</h3>
                         </div>
 
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white">
                             <li><a href="#"
                                     class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Account
                                         security</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2697,7 +2830,11 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2  text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Socialremit uses advanced security measures such as 256-bit SSL/TLS encryption, firewall protection, and secure data centers to ensure your personal and financial information remains safe. We follow global best practices and all accounts are continuously monitored for suspicious activity. </li>
+                                     </ul>
+                                </li>
                             <li><a href="#"
                                     class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Two-factor
                                         authentication</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -2706,16 +2843,46 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2  text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   SocialRemit supports multi-factor authentication, requiring users to verify their identity using a one-time code sent via SMS, email, or authenticator app. This adds an extra layer of protection, even if your password is compromised. We strongly recommend activating 2FA for your account security. </li>
+                                     </ul>
+                            </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Fraud
-                                        prevention</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        How does SocialRemit prevent fraud?
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   We deploy intelligent fraud detection systems to monitor for irregular behavior such as unusual login attempts or high-risk transactions. Accounts may be temporarily frozen if suspicious activity is detected. SocialRemit enforces strict anti-fraud policies, including prohibiting scams, phishing attempts, and impersonation. If you're ever unsure about an interaction, please contact us immediately. </li>
+                                    </ul>
+                            </li>
+                            <li><a href="#"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        4. What can I do to keep my account safe?
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Your security is a shared responsibility. Here’s how you can help protect your account: </li>
+                                    </ul>
+                                     <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   - Use a strong, unique password and change it regularly. </li>
+                                        <li>   - Enable 2FA via SMS or authenticator apps. </li>
+                                        <li>   - Never share your PIN, OTP, or password with anyone. </li>
+                                        <li>   - Avoid clicking on unknown links or engaging with suspicious emails. </li>
+                                         <li>   - Contact SocialRemit support if you notice anything unusual. </li>
+                                    </ul>
+                            </li>
                         </ul>
                     </div>
                     <div
@@ -2733,35 +2900,41 @@
                             </div>
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Payment Methods</h3>
                         </div>
+                        <p class="text-sm  mb-4 text-[#1E0B4B] dark:text-white">At SocialRemit, we provide safe and convenient ways to fund your transfers. You can currently choose between the following secure payment methods:</p>
 
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white">
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Bank
-                                        transfers</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Debit and Credit Cards
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   We accept major cards including Visa and Mastercard for instant payments. </li>
+                                    </ul>
+                            </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Debit/Credit
-                                        cards</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                         Open Banking (Bank Transfer)
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
-                            <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Mobile
-                                        money</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>  Make payments directly from your bank account using Open Banking—a fast, secure, and FCA-regulated method that connects you directly to your bank. </li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li class="font-semibold">   Supported Banks: </li>
+                                        <li>   We support a wide range of UK and EU banks. You'll be prompted to select your bank at checkout. </li>
+                                    </ul>
+                            </li>
                         </ul>
                     </div>
                     <div
@@ -2784,34 +2957,62 @@
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Business Features</h3>
                         </div>
 
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white">
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Business
-                                        accounts</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Customer Support
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   We’re here to help. Whether you have a question about your transaction, need assistance with onboarding, or just want to say hello — our team is ready to support you. </li>
+                                    </ul>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white mt-4">
+                                        <li>Email: info@socialremit.co.uk</li>
+                                        <li>Phone (UK): 020 3376 9630</li>
+                                        <li>Live Chat: Available on the bottom right of your screen 24/7</li>
+                                    </ul>
+                                </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Bulk
-                                        payments</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Vulnerable Customer Support
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li> At SocialRemit, your wellbeing matters to us.</li>
+                                        <li> We understand that life can sometimes bring unexpected challenges—whether it's a health issue, financial difficulty, recent bereavement, or something else that affects how you manage your money. If you're going through a difficult time, you don’t have to face it alone.</li>
+                                    </ul>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li> Let us know if you’re in a vulnerable situation—so we can support you appropriately.</li>
+                                        <li> Our team is trained to listen with empathy and to offer tailored help that suits your circumstances, whether that means extra time, simplified processes, or access to additional support.</li>
+                                        <li>Your information will be treated in strict confidence and only used to make your experience with us safer and easier.</li>
+                                        <li>You can tell us about your situation by contacting our customer care team.</li>
+                                    </ul>
+                            </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>API
-                                        integration</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Reporting suspicious activity
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>   Protecting your money and personal information is our highest priority. If you believe your account has been accessed without your permission, or if you receive a suspicious message claiming to be from SocialRemit, please act immediately. </li>
+                                        <li>   Report the activity to us right away through any of the support channels: </li>
+                                    </ul>
+                            </li>
                         </ul>
                     </div>
                     <div
@@ -2830,34 +3031,101 @@
                             </div>
                             <h3 class="text-xl font-bold mb-4 text-[#1E0B4B] dark:text-white">Bills &amp; Utilities</h3>
                         </div>
-                        <ul class="space-y-2 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                        <ul class="space-y-2 list-decimal ml-4 text-[#1E0B4B]/70 dark:text-white">
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Paying
-                                        bills</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Transaction Support
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>Your safety and the integrity of our financial services are extremely important to us. That’s why we are legally required to confirm your identity before processing certain transactions.This process helps us:</li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li><strong>Prevent fraud and financial crime,</strong>  including money laundering and identity theft</li>
+                                        <li><strong> Comply with financial regulations </strong> set by the Financial Conduct Authority (FCA), HMRC, and international anti-money laundering (AML) standards</li>
+                                        <li><strong> Protect your account </strong> from unauthorized access or misuse</li>
+                                    </ul>
+                                     <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>We only collect the necessary information and your documents are stored securely and handled in strict confidence.</li>
+                                    </ul>
+                                    <h3 class="mt-6 text-lg font-semibold">What Types of ID Might Be Needed?</h3>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>The type of documentation we request depends on the service you are using, your transaction limits, and local regulations in your country. You may be asked to provide one or more of the following:</li>
+                                    </ul>
+
+                                    <h3 class="mt-6 text-lg font-semibold"> Proof of Identity (POI)</h3>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>Examples include:</li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-3 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li> Passport</li>
+                                        <li> National ID card (front and back)</li>
+                                        <li> Driver’s licence</li>
+                                    </ul>
+
+                                    <h3 class="mt-6 text-lg font-semibold"> Proof of Address (POA)</h3>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>Must be dated within the last 3 months:</li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-3 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li> Utility bill (gas, electricity, water)</li>
+                                        <li> Bank statement or credit card bill</li>
+                                        <li> Council tax letter</li>
+                                        <li> Tenancy agreement or official letter from a government agency</li>
+                                    </ul>
+
+                                    <h3 class="mt-6 text-lg font-semibold"> Additional Verification</h3>
+                                    <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>In some cases, we may also request:</li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-3 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li> A selfie or video verification (to match your face with your ID)</li>
+                                        <li>Proof of income or source of funds (e.g. payslip, invoice, bank transaction)</li>
+                                    </ul>
+                            </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Supported
-                                        providers</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Updating My Account Details?
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                     <ul class="space-y-2 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>We understand that sometimes your details may need to be updated—whether it's your name, contact information, address, or other details. Simply reach out to us through any of our customer support channels, and we’ll guide you through the process.</li>
+                                        <li>Once we receive your request, we’ll review it and respond promptly. If additional information or documentation is required to process the change, we’ll let you know exactly what’s needed.</li>
+                                    </ul>
+                            </li>
                             <li><a href="#"
-                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>Payment
-                                        tracking</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="flex items-center justify-between group/link text-[#1E0B4B]/70 dark:text-white hover:text-[#00B6DE] transition-colors"><span>
+                                        Refund Procedure
+                                    </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg></a></li>
+                                    </svg></a>
+                                     <ul class="space-y-4 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>We aim to process your transfers quickly and securely. However, we understand that sometimes a refund may be necessary.</li>
+                                        <li>You may request a refund if:</li>
+                                    </ul>
+                                    <ul class="space-y-2 mt-3 list-disc ml-4 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>Your transfer has not yet been paid out or collected</li>
+                                        <li>There was an error in the transaction (e.g., wrong recipient details) and funds have not been paid to the information provided</li>
+                                        <li>The transfer was cancelled or declined before completion</li>
+                                    </ul>
+                                     <ul class="space-y-4 mt-3 text-[#1E0B4B]/70 dark:text-white">
+                                        <li>Refunds are not guaranteed once a transaction has been paid out, as funds may already be in the hands of the recipient.</li>
+                                    </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -2975,7 +3243,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Send Money</span></a><a href="#"
+                                    </svg><span>Send Money</span></a><a href="track-your-transfer.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2983,7 +3251,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Track Transfer</span></a><a href="#"
+                                    </svg><span>Track Transfer</span></a><a href="help-center.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2991,7 +3259,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Help Center</span></a><a href="#"
+                                    </svg><span>Help Center</span></a><a href="about-us.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2999,7 +3267,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>About Us</span></a><a href="#"
+                                    </svg><span>About Us</span></a><a href="career.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3007,7 +3275,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Careers</span></a><a href="#"
+                                    </svg><span>Careers</span></a><a href="blog.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -3023,7 +3291,7 @@
                                         class="lucide lucide-arrow-right w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
-                                    </svg><span>Press</span></a><a href="#"
+                                    </svg><span>Press</span></a><a href="help-community.html"
                                     class="flex items-center space-x-2 text-gray-600 dark:text-white hover:text-[#00B6DE] transition-colors group"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

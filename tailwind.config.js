@@ -1,42 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: 'class',
-    content: [
-        './src/index.html',
-        './src/coming-soon.html',
-        './src/sign-up.html',
-        './src/track-your-transfer.html',
-        './src/download-app.html',
-        './src/enter-otp.html',
-        './src/about-us.html',
-        './src/career.html',
-        './src/blog.html',
-        './src/newsroom.html',
-        './src/our-operating.html',
-        './src/partnership.html',
-        './src/reward.html',
-        './src/help-video.html',
-        './src/help-center.html',
-        './src/help-community.html',
-        './src/help-chat.html',
-        './src/help-phone.html',
-        './src/impact-education.html',
-        './src/impact-community.html',
-        './src/impact-enviromental.html',
-        './src/impact-sustainable.html',
-        './src/impact-tech.html',
-        './src/impact-impact.html',
-        './src/product-money.html',
-        './src/product-bill.html',
-        './src/product-link.html',
-        './src/product-airtime.html',
-        './src/product-global.html',
-        './src/product-virtual.html',
-        './src/product-physical.html',
-        './src/product-local.html',
-        './src/comming_soon.html',
-
-    ],
+  darkMode: 'class',
+  content: [
+    './src/**/*.html',
+  ],
     theme: {
         extend: {
             zIndex: {

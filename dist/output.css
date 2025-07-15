@@ -612,6 +612,10 @@ html,
   pointer-events: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1411,6 +1415,10 @@ html,
   -webkit-user-select: all;
      -moz-user-select: all;
           user-select: all;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .list-disc{
@@ -3851,6 +3859,10 @@ html,
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:grid-rows-2{
